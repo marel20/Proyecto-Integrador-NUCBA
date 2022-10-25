@@ -59,21 +59,44 @@ header{
     cursor: pointer;
 }
 
+nav{
+    display: flex;
+    gap: 250px;
+}
 nav ul{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3.125rem;
 }
-
 nav ul a{
     color: var(--tx-primary);
     /* font-weight: bold; */
     letter-spacing: .125rem;
 }
+nav a button{
+    background: var(--tx-primary);
+    color: var(--tx-secondary);
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+nav a button:hover{
+    transform: scale(1.1);
+
+}
 
 .toggle, #menu-toggle{
     display: none;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--tx-primary);
 }
 
 
