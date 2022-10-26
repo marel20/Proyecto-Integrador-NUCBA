@@ -25,6 +25,9 @@
         z-index: 2;
         display: none;
     }
+    nav a button{
+        margin-left: 0px;
+    }
     .toggle{
         display: flex;
         cursor: pointer;
