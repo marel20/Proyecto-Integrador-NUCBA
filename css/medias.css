@@ -37,6 +37,10 @@
         display: flex;
     }
 
+    .cards{
+    flex-wrap: wrap;
+    }
+
     .contact{
         flex-direction: column;
     }
