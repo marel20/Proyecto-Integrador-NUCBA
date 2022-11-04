@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,100&family=Nova+Round&display=swap');
+
+/* font-family: 'Barlow', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Nova Round', cursive; */
+
 *{
     margin: 0;
     padding: 0;
@@ -6,6 +12,7 @@
     list-style: none;
     scroll-behavior: smooth;
     scroll-padding-top: 6.25rem;
+    font-family: 'Barlow', sans-serif;
 }
 
 body{
@@ -42,6 +49,14 @@ body{
 main{
     width: 95%;
     margin: 0 auto;
+}
+
+.btn-up a{
+    font-size: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    color: var(--tx-secondary);
 }
 
 header{
@@ -117,6 +132,7 @@ nav a button:hover{
     margin: 120px auto;
     position: relative;
     width: 100%;
+    height: 80vh;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -136,6 +152,8 @@ nav a button:hover{
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-shrink: 0;
     flex-grow: 0;
     max-width: 100%;
@@ -354,6 +372,7 @@ form input, textarea{
     border-radius: .625rem;
     border: none;
     box-shadow: .1875rem .1875rem var(--details);
+    background-color: #ebd2d2;
 }
 
 .form-button{
@@ -371,6 +390,20 @@ form button{
 form button:hover{
     transform: scale(1.1);
     color: #FFFFFF;
+}
+
+.login{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+    gap: 30px;
 }
 
 .contact iframe{
@@ -418,7 +451,7 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
-    font-size: 2.1875rem;
+    font-size: 30px;
     width: 95%;
 }
 .social-media i{
@@ -426,9 +459,9 @@ footer{
 
 }
 .social-media i:hover{
-    background: var(--tx-primary);
+    background: #72ccf531;
     color: var(--tx-secondary);
-    padding: .9375rem;
+    padding: 10px;
     border-radius: 3.125rem;
 }
 

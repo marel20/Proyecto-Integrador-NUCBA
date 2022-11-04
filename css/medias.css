@@ -39,6 +39,11 @@
 
     .cards{
     flex-wrap: wrap;
+    padding: 10px ;
+    }
+
+    .login{
+        width: 80% !important;
     }
 
     .contact{
@@ -83,6 +88,11 @@
         cursor: pointer;
         order: 2;
     }
+
+    .login{
+        width: 80% !important;
+    }
+    
     #menu-toggle:checked + .nav-list{
         display: flex;
     }

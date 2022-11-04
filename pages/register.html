@@ -19,7 +19,7 @@
   </head>
   <body>
     <header>
-      <a class="back" href="../index.html"
+      <a class="back" href="login.html"
         ><i class="fa-solid fa-arrow-left"></i>
         <p>Atrás</p>
       </a>
@@ -36,7 +36,98 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="register">
+        <h3>Complete los datos requeridos para su registro</h3>
+        <article class="login">
+          <form action="">
+            <div class="label-form">
+              <label for="name"><i class="fa-solid fa-user"></i></label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Nombre"
+                required
+              />
+            </div>
+            <div class="label-form">
+              <label for="surname"><i class="fa-solid fa-user"></i></label>
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Apellido"
+                required
+              />
+            </div>
+
+            <div class="label-form">
+              <label for="mail"><i class="fa-solid fa-at"></i></label>
+              <input
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="label-form">
+              <label for="password"><i class="fa-solid fa-key"></i></label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Contraseña"
+                required
+              />
+            </div>
+
+            <div class="label-form">
+              <label for="address"
+                ><i class="fa-solid fa-location-pin"></i
+              ></label>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Dirección"
+                required
+              />
+            </div>
+            <div class="label-form">
+              <label for="phone"
+                ><i class="fa-solid fa-mobile-screen-button"></i
+              ></label>
+              <input
+                type="number"
+                name="phone"
+                id="phone"
+                placeholder="Teléfono"
+                required
+              />
+            </div>
+
+            <div class="label-form">
+              <label for="date"
+                ><i class="fa-regular fa-calendar-days"></i
+              ></label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                placeholder="Fecha de nacimiento"
+                required
+              />
+            </div>
+
+            <div class="form-button">
+              <button type="submit">Registrarme</button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
     <footer>
       <div class="info">
         <!-- <div class="address">
