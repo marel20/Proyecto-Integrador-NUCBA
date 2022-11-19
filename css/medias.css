@@ -47,6 +47,11 @@
         transition: all .5s !important;
     }
 
+    .container-all{
+        height: 280px;
+        margin-bottom: 50px;
+    }
+
     .text-company{
         flex-direction: column !important;
     }
@@ -150,6 +155,11 @@
         transition: all .5s !important;
     }
 
+    .container-all{
+        height: 350px;
+        margin-bottom: 50px;
+    }
+
     .login{
         width: 80% !important;
     }
@@ -243,6 +253,11 @@
     #menu-toggle:checked + .nav-list{
         right: -3px;
         transition: all .5s !important;
+    }
+
+    .container-all{
+        height: 450px;
+        margin-bottom: 50px;
     }
     
     .login{

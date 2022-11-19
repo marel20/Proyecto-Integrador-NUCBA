@@ -350,7 +350,7 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     width: calc(100% + 16px);
     height: calc(100% + 16px);
     z-index: -1;
-    animation: bg-animate 10s ease infinite;
+    animation: bg-animate 15s ease infinite;
 }
 
 /* services style */
