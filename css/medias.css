@@ -18,10 +18,10 @@
 
     .nav-list{
         position: absolute;
-        top: 100px;
-        left: 40%;
         width: 60%;
-        height: 85vh;
+        top: 100px;
+        right: -60%;
+        height: 87vh;
         flex-direction: column;
         background: var(--bg-secondary);
         border: 2px solid var(--details);
@@ -32,7 +32,7 @@
         padding: 45px 30px;
         gap: 25px;
         z-index: 2;
-        display: none;
+        transition: all .5s !important;
     }
     nav a button{
         margin-left: 0px;
@@ -43,16 +43,44 @@
         order: 2;
     }
     #menu-toggle:checked + .nav-list{
-        display: flex;
+        right: -3px;
+        transition: all .5s !important;
+    }
+
+    .text-company{
+        flex-direction: column !important;
+    }
+    .text-company div p{
+        width: 90%;
+        margin: 0 auto !important;
+    }
+    .text-company div iframe{
+        margin: 50px auto;
+    }
+
+    .benefits{
+        width: 90% !important;
+        margin: 0 auto !important;
+
     }
 
     .cards{
-    flex-wrap: wrap;
-    padding: 10px ;
+        flex-wrap: wrap;
+        padding: 10px ;
     }
 
     .card-company{
         height: auto !important;
+    }
+    
+    .spool{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spool-item:nth-child(even), 
+    .spool-item:nth-child(odd){
+        grid-column: auto;
+        grid-row: auto;
     }
 
     .login{
@@ -70,15 +98,6 @@
     .contact iframe{
         width: 100%;
         margin: 0 auto;
-    }
-    .spool{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .spool-item:nth-child(even), 
-    .spool-item:nth-child(odd){
-        grid-column: auto;
-        grid-row: auto;
     }
 }
 
@@ -102,10 +121,10 @@
 
     .nav-list{
         position: absolute;
-        top: 100px;
-        left: 40%;
         width: 60%;
-        height: 88vh;
+        top: 100px;
+        right: -60%;
+        height: 87vh;
         flex-direction: column;
         background: var(--bg-secondary);
         border: 2px solid var(--details);
@@ -116,16 +135,40 @@
         padding: 45px 30px;
         gap: 25px;
         z-index: 2;
-        display: none;
+        transition: all .5s !important;
+    }
+    nav a button{
+        margin-left: 0px;
     }
     .toggle{
         display: flex;
         cursor: pointer;
         order: 2;
     }
+    #menu-toggle:checked + .nav-list{
+        right: -3px;
+        transition: all .5s !important;
+    }
 
     .login{
         width: 80% !important;
+    }
+
+    .text-company{
+        flex-direction: column !important;
+    }
+    .text-company div p{
+        width: 90%;
+        margin: 0 auto !important;
+    }
+    .text-company div iframe{
+        margin: 50px auto;
+    }
+
+    .benefits{
+        width: 90% !important;
+        margin: 0 auto !important;
+
     }
 
     .cards{
@@ -135,6 +178,16 @@
 
     .card-company{
         height: auto !important;
+    }
+    
+    .spool{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .spool-item:nth-child(even), 
+    .spool-item:nth-child(odd){
+        grid-column: auto;
+        grid-row: auto;
     }
 
     .address{
@@ -150,18 +203,6 @@
         margin: 0 auto;
     }
     
-    #menu-toggle:checked + .nav-list{
-        display: flex;
-    }
-    .spool{
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .spool-item:nth-child(even), 
-    .spool-item:nth-child(odd){
-        grid-column: auto;
-        grid-row: auto;
-    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1100px){
@@ -175,10 +216,10 @@
 
     .nav-list{
         position: absolute;
-        top: 100px;
-        left: 40%;
         width: 60%;
-        height: 88vh;
+        top: 100px;
+        right: -60%;
+        height: 87vh;
         flex-direction: column;
         background: var(--bg-secondary);
         border: 2px solid var(--details);
@@ -189,21 +230,47 @@
         padding: 45px 30px;
         gap: 25px;
         z-index: 2;
-        display: none;
+        transition: all .5s !important;
+    }
+    nav a button{
+        margin-left: 0px;
     }
     .toggle{
         display: flex;
         cursor: pointer;
         order: 2;
     }
-
+    #menu-toggle:checked + .nav-list{
+        right: -3px;
+        transition: all .5s !important;
+    }
+    
     .login{
         width: 80% !important;
+    }
+
+    .text-company div p{
+        margin-right: 90px;
+    }
+
+    .benefits{
+        width: 75% !important;
+        margin: 0 auto 0 30px !important;
     }
 
     .cards{
         flex-wrap: wrap;
         padding: 10px;
+    }
+    
+    .spool{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .spool-item:nth-child(even), 
+    .spool-item:nth-child(odd){
+        grid-column: auto;
+        grid-row: auto;
     }
 
     .card-company{
@@ -221,19 +288,6 @@
     .contact iframe{
         width: 100%;
         margin: 0 auto;
-    }
-    
-    #menu-toggle:checked + .nav-list{
-        display: flex;
-    }
-    .spool{
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .spool-item:nth-child(even), 
-    .spool-item:nth-child(odd){
-        grid-column: auto;
-        grid-row: auto;
     }
 }
 

@@ -252,9 +252,17 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     margin: 50px auto;
 }
 .text-company{
+    display: flex;
+    align-items: center;
     width: 90%;
     margin: 0 auto;
     text-align: justify;
+}
+.text-company div p{
+    width: 80%;
+}
+.text-company div iframe{
+    margin: 0 auto;
 }
 
 .cards{
@@ -290,15 +298,59 @@ input[id="4"]:checked ~ .pagination .pagination-item[for="4"]{
     margin: 0 auto;
     border-radius: 10px;
 }
+.img-card:hover{
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
 .wholesale-prices{
     color: #000000;
     font-weight: bold;
     font-size: 14px;
     text-decoration: none;
-    margin: 0 auto 0 20px;
+    margin: 0 auto 20px 20px;
 }
 .wholesale-prices:hover{
     color: #00000080;
+}
+
+.benefits-company{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.benefits{
+    position: relative;
+    width: 60%;
+    margin: 0 20px 0 80px;
+    border-radius: 15px !important;
+    padding: 25px;
+    color: #FFFFFF;
+}
+.benefits ul li{
+    list-style: square;
+}
+.benefits ul{
+    margin: 15px auto 15px 20px;
+}
+.benefits a{
+    color: #FFFFFF;
+    margin: 0 auto !important;
+}
+
+.bg-animated::before, .bg-animated::after{
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: -8px;
+    border-radius: 15px;
+    background: linear-gradient(120deg, var(--bg-secondary), var(--bg-primary));
+    background-size: 300%;
+    width: calc(100% + 16px);
+    height: calc(100% + 16px);
+    z-index: -1;
+    animation: bg-animate 10s ease infinite;
 }
 
 /* services style */

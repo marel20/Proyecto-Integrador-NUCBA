@@ -17,3 +17,26 @@
       transform: translate3d(calc(-100% * 3), 0, 0);
     }
   }
+
+  /* spin animation */
+  @keyframes spin{
+    from{
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+  
+    to{
+      transform: rotateX(0deg) rotateY(360deg);
+    }
+  }
+  
+  @keyframes bg-animate{
+    0%{
+        background-position: 0% 200%;
+    }
+    50%{
+        background-position: 200% 0%;
+    }
+    100%{
+        background-position: 0% 330%;
+    }
+  }
