@@ -48,8 +48,13 @@
     }
 
     .container-all{
-        height: 280px;
+        height: 180px;
         margin-bottom: 50px;
+    }
+
+    .pagination-item{
+        width: 15px;
+        height: 15px;
     }
 
     .text-company{
@@ -160,6 +165,11 @@
         margin-bottom: 50px;
     }
 
+    .pagination-item{
+        width: 15px;
+        height: 15px;
+    }
+
     .login{
         width: 80% !important;
     }
@@ -258,6 +268,11 @@
     .container-all{
         height: 450px;
         margin-bottom: 50px;
+    }
+
+    .pagination-item{
+        width: 15px;
+        height: 15px;
     }
     
     .login{
