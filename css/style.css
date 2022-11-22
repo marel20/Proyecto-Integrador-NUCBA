@@ -584,7 +584,8 @@ footer{
 }
 .download p{
     text-align: center;
-    margin: 20px auto 0 auto;
+    font-size: 20px;
+    margin: 20px auto 10px auto;
 }
 .download button{
     padding: .625rem;
