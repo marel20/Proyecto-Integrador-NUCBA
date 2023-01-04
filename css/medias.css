@@ -1,4 +1,4 @@
-@media screen and (min-width: 0px) and (max-width: 599px){
+@media screen and (min-width: 320px) and (max-width: 599px){
     .visible{
         display: none;
         visibility: hidden;
@@ -14,6 +14,10 @@
     
     .logo{
         width: 60%;
+    }
+
+    .banner{
+        height: 30vh !important;
     }
 
     .nav-list{
@@ -76,7 +80,8 @@
 
     .cards{
         flex-wrap: wrap;
-        padding: 10px ;
+        padding: 10px;
+        gap: 0px !important;
     }
 
     .card-company{
@@ -87,8 +92,18 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .spool2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .spool-item:nth-child(even), 
     .spool-item:nth-child(odd){
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .spool2 .spool-item:nth-child(even), 
+    .spool2 .spool-item:nth-child(odd){
         grid-column: auto;
         grid-row: auto;
     }
@@ -99,10 +114,10 @@
 
     .address{
         text-align: center;
-        font-size: 30px !important;
+        font-size: 18px !important;
     }
     .address p i{
-        font-size: 35px !important;
+        font-size: 25px !important;
     }
 
     .contact{
@@ -116,7 +131,11 @@
 
     .download p{
         margin: 30px auto -10px auto !important;
-        font-size: 22px !important;
+        font-size: 18px !important;
+    }
+
+    .copyright{
+        align-items: flex-end !important;
     }
 }
 
@@ -136,6 +155,10 @@
 
     .logo{
         width: 35%;
+    }
+
+    .banner{
+        height: 30vh !important;
     }
 
     .nav-list{
@@ -213,32 +236,48 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
+    .spool2{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     .spool-item:nth-child(even), 
     .spool-item:nth-child(odd){
         grid-column: auto;
         grid-row: auto;
     }
 
+    .spool2 .spool-item:nth-child(even), 
+    .spool2 .spool-item:nth-child(odd){
+        grid-column: auto;
+        grid-row: auto;
+    }
+
     .address{
         text-align: center;
-        font-size: 30px !important;
+        font-size: 20px !important;
     }
     .address p i{
-        font-size: 35px !important;
+        font-size: 25px !important;
     }
     
     .contact{
         flex-direction: column;
+        justify-content: center !important;
     }
     
     .contact iframe{
-        width: 100%;
+        width: 550px;
         margin: 0 auto;
     }
     
     .download p{
-        margin: 30px auto 15px auto !important;
-        font-size: 22px !important;
+        margin: 60px auto 15px auto !important;
+        font-size: 20px !important;
+    }
+
+    .copyright{
+        align-items: flex-end !important;
+        margin: 15px auto;
     }
 }
 
@@ -249,6 +288,10 @@
 
     .logo{
         width: 25%;
+    }
+
+    .banner{
+        height: 30vh !important;
     }
 
     .nav-list{
@@ -314,8 +357,18 @@
         grid-template-columns: repeat(4, 1fr);
     }
 
+    .spool2{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     .spool-item:nth-child(even), 
     .spool-item:nth-child(odd){
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .spool2 .spool-item:nth-child(even), 
+    .spool2 .spool-item:nth-child(odd){
         grid-column: auto;
         grid-row: auto;
     }
@@ -326,24 +379,24 @@
 
     .address{
         text-align: center;
-        font-size: 30px !important;
+        font-size: 20px !important;
     }
     .address p i{
-        font-size: 35px !important;
-    }
-    
-    .contact{
-        flex-direction: column;
+        font-size: 25px !important;
     }
     
     .contact iframe{
-        width: 100%;
+        width: 120%;
         margin: 0 auto;
     }
     
     .download p{
         margin: 30px auto 15px auto !important;
-        font-size: 22px !important;
+        font-size: 20px !important;
+    }
+
+    .copyright{
+        align-items: flex-end !important;
     }
 }
 
