@@ -1,32 +1,20 @@
 /* slide animation */
 
 @keyframes autoplay{
-    14%{
+    25%{
         transform: translate3d(calc(-100% * 0), 0, 0);
     }
     
-    28%{
+    50%{
         transform: translate3d(calc(-100% * 1), 0, 0);
     }
     
-    42%{
+    75%{
         transform: translate3d(calc(-100% * 2), 0, 0);
     }
   
-    56%{
-      transform: translate3d(calc(-100% * 3), 0, 0);
-    }
-
-    70%{
-      transform: translate3d(calc(-100% * 4), 0, 0);
-    }
-
-    84%{
-      transform: translate3d(calc(-100% * 5), 0, 0);
-    }
-
     100%{
-      transform: translate3d(calc(-100% * 6), 0, 0);
+      transform: translate3d(calc(-100% * 3), 0, 0);
     }
   }
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="../assets/logo/logo-S.png" type="logo" />
+    <link rel="icon" href="../assets/logo/Logo.jpg" type="logo" />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
     <link rel="stylesheet" type="text/css" href="../css/medias.css" />
     <link rel="stylesheet" type="text/css" href="../css/animations.css" />
@@ -15,47 +15,25 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Registro - Supermercado Supersol</title>
+    <title>Tecno Rick Seguridad</title>
   </head>
   <body>
     <header>
-      <nav id="nav" class="menu">
-        <section class="menu-container">
-          <div class="menu-logo">
-            <img src="../assets/logo/logo-supersol.png" alt="Logo_Supersol" />
-          </div>
-
-          <ul class="menu-links">
-            <li>
-              <a href="../index.html#home" class="menu-link">Inicio</a>
-            </li>
-
-            <li>
-              <a href="../index.html#company" class="menu-link">Empresa</a>
-            </li>
-
-            <li>
-              <a href="../index.html#products" class="menu-link">Productos </a>
-            </li>
-
-            <li>
-              <a href="contact.html" class="menu-link">Contacto</a>
-            </li>
-          </ul>
-
-          <div class="user-cart">
-            <a href="login.html"><i class="fa-solid fa-user"></i></a>
-            <button><i class="fa-solid fa-cart-shopping"></i></button>
-          </div>
-
-          <div class="menu-hamburguer">
-            <img
-              src="../assets/icons/menu.png"
-              class="menu-img"
-              alt="menu-hamburguer"
-            />
-          </div>
-        </section>
+      <a class="back" href="login.html"
+        ><i class="fa-solid fa-arrow-left"></i>
+        <p>Atrás</p>
+      </a>
+      <nav>
+        <label for="menu-toggle" class="toggle">
+          <img src="../assets/icons/menu.png" alt="hamburguer" />
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="nav-list">
+          <li><a href="../index.html#home">Inicio</a></li>
+          <li><a href="../index.html#company">Empresa</a></li>
+          <li><a href="../index.html#services">Servicios</a></li>
+          <li><a href="../index.html#contact">Contacto</a></li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -152,6 +130,22 @@
     </main>
     <footer>
       <div class="info">
+        <!-- <div class="address">
+          <p>
+            <i class="fa-sharp fa-solid fa-house-chimney-window"></i>Rivadavia
+            1168, Correa, Santa Fe, Argentina
+          </p>
+          <p>
+            <a href="https://wa.me/+5493471416804" target="_blank"
+              ><i class="fa-brands fa-square-whatsapp"></i>03471-15416804</a
+            >
+          </p>
+          <p>
+            <a href="https://wa.me/+5493471590880" target="_blank"
+              ><i class="fa-brands fa-square-whatsapp"></i>03471-15590880</a
+            >
+          </p>
+        </div> -->
         <div class="social-media">
           <a href="https://www.instagram.com/tecno.rick" target="_blank"
             ><i class="fa-brands fa-instagram"></i
@@ -183,9 +177,5 @@
         </p>
       </div>
     </footer>
-
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/data.js"></script>
-    <script type="text/javascript" src="js/utilities.js"></script>
   </body>
 </html>
