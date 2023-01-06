@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="assets/logo/Logo.jpg" type="logo" />
+    <link rel="icon" href="assets/logo/logo-S.png" type="logo" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/medias.css" />
     <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <script
+      src="https://kit.fontawesome.com/0ba329a6e7.js"
+      crossorigin="anonymous"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -15,25 +19,47 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Tecno Rick Seguridad</title>
+    <title>Supermercado Supersol</title>
   </head>
   <body>
     <header>
-      <img class="logo" src="assets/logo/Logopng.png" alt="Logo_Tecno_Rick" />
-      <nav>
-        <label for="menu-toggle" class="toggle">
-          <img src="assets/icons/menu.png" alt="hamburguer" />
-        </label>
-        <input type="checkbox" id="menu-toggle" />
-        <ul class="nav-list">
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#company">Empresa</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#contact">Contacto</a></li>
-          <a href="pages/login.html"
-            ><button class="button-form">Ingresar</button></a
-          >
-        </ul>
+      <nav id="nav" class="menu">
+        <section class="menu-container">
+          <div class="menu-logo">
+            <img src="assets/logo/logo-supersol.png" alt="Logo_Supersol" />
+          </div>
+
+          <ul class="menu-links">
+            <li>
+              <a href="#home" class="menu-link">Inicio</a>
+            </li>
+
+            <li>
+              <a href="#company" class="menu-link">Empresa</a>
+            </li>
+
+            <li>
+              <a href="#products" class="menu-link">Productos </a>
+            </li>
+
+            <li>
+              <a href="pages/contact.html" class="menu-link">Contacto</a>
+            </li>
+          </ul>
+
+          <div class="user-cart">
+            <a href="pages/login.html"><i class="fa-solid fa-user"></i></a>
+            <button><i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="menu-hamburguer">
+            <img
+              src="assets/icons/menu.png"
+              class="menu-img"
+              alt="menu-hamburguer"
+            />
+          </div>
+        </section>
       </nav>
     </header>
     <main>
@@ -43,178 +69,108 @@
           <input type="radio" id="2" name="image-slide" hidden />
           <input type="radio" id="3" name="image-slide" hidden />
           <input type="radio" id="4" name="image-slide" hidden />
+          <input type="radio" id="5" name="image-slide" hidden />
+          <input type="radio" id="6" name="image-slide" hidden />
+          <input type="radio" id="7" name="image-slide" hidden />
 
           <div class="slide">
             <div class="item-slide">
-              <img src="assets/img/tecnoRick.jpg" />
+              <img src="assets/img/banner1.png" />
             </div>
 
             <div class="item-slide">
-              <img src="assets/img/privacy.png" />
+              <img src="assets/img/banner2.png" />
             </div>
 
             <div class="item-slide">
-              <img src="assets/img/proteccion.png" />
+              <img src="assets/img/banner3.png" />
             </div>
 
             <div class="item-slide">
-              <img src="assets/img/security.png" />
+              <img src="assets/img/bsf.png" />
+            </div>
+
+            <div class="item-slide">
+              <img src="assets/img/horarios.png" />
+            </div>
+
+            <div class="item-slide">
+              <img src="assets/img/tarjetas1.png" />
+            </div>
+
+            <div class="item-slide">
+              <img src="assets/img/tarjetas2.png" />
             </div>
           </div>
 
           <div class="pagination">
             <label class="pagination-item" for="1">
-              <img src="assets/img/tecnoRick.jpg" />
+              <img src="assets/img/banner1.png" />
             </label>
 
             <label class="pagination-item" for="2">
-              <img src="assets/img/privacy.png" />
+              <img src="assets/img/banner2.png" />
             </label>
 
             <label class="pagination-item" for="3">
-              <img src="assets/img/proteccion.png" />
+              <img src="assets/img/banner3.png" />
             </label>
 
             <label class="pagination-item" for="4">
-              <img src="assets/img/security.png" />
+              <img src="assets/img/bsf.png" />
+            </label>
+
+            <label class="pagination-item" for="5">
+              <img src="assets/img/horarios.png" />
+            </label>
+
+            <label class="pagination-item" for="6">
+              <img src="assets/img/tarjetas1.png" />
+            </label>
+
+            <label class="pagination-item" for="7">
+              <img src="assets/img/tarjetas2.png" />
             </label>
           </div>
         </article>
       </section>
       <section id="company">
-        <div>
-          <img class="banner" src="assets/img/empresa1.jpg" alt="img-empresa" />
-        </div>
         <article>
-          <div class="text-company">
-            <div class="benefits-company">
-              <p>
-                <b>Tecno Rick</b>, es una empresa de dos amigos que se hicieron
-                socios para crearla a fines del año 2018, con muchas
-                capacitaciones para poder brindar una mano de obra
-                especializada, a partir de la fecha, los clientes comenzaron a
-                confiar en nuestra mano de obra. Contamos con una gran cantidad
-                de vecinos de nuestro pueblo y aledaños que contratan nuestros
-                servicios, desde hogares hasta empresas de gran magnitud.
-              </p>
-              <div class="benefits bg-animated">
-                <h3>
-                  ¿Sos instalador y queres trabajar con nosotros? Conoce los
-                  beneficios:
-                </h3>
-                <ul>
-                  <li>Descuentos por compras en cantidad.</li>
-                  <li>Asesoramiento pre y post venta.</li>
-                  <li>Ofertas semanales.</li>
-                  <li>Soporte técnico inmediato.</li>
-                  <li>Variedad en formas de pago.</li>
-                </ul>
-                <a class="wholesale-prices" href="pages/register.html"
-                  >Hacé click acá para registrarte</a
-                >
-              </div>
-            </div>
-            <div>
-              <iframe
-                title="Noticias"
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecnorick1&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                width="330"
-                height="400"
-                scrolling="yes"
-                frameborder="0"
-                allowfullscreen="true"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              >
-              </iframe>
-            </div>
-          </div>
-          <div class="cards">
-            <div class="card-company">
-              <h2 class="tittle-card">Videovigilancia</h2>
-              <img
-                class="img-card"
-                src="assets/img/videovigilancia.png"
-                alt="img-videovigilancia"
-              />
-              <p class="text-card">
-                Instalamos y vendemos todos los productos relacionados con
-                sistemas de videovigilancia. Desde cámaras de seguridad en los
-                hogares y grandes industrias hasta enlaces punto a punto para
-                protección del pueblo/ciudad.
-              </p>
-              <a class="wholesale-prices" href="pages/login.html"
-                >Ingresá para ver los precios mayoristas</a
-              >
-            </div>
-            <div class="card-company">
-              <h2 class="tittle-card">Alarmas</h2>
-              <img
-                class="img-card"
-                src="assets/img/proteccion2.jpg"
-                alt="img-proteccion"
-              />
-              <p class="text-card">
-                Realizamos instalaciones y venta de todo tipo de equipos de
-                alarmas para domicilios, oficinas, galpones, etc. Nos enfocamos
-                en la necesidad de cada cliente para que obtenga el mejor
-                servicio. Brindamos la app para manipular tu alarma de forma
-                remota.
-              </p>
-              <a class="wholesale-prices" href="pages/login.html"
-                >Ingresá para ver los precios mayoristas</a
-              >
-            </div>
-            <div class="card-company">
-              <h2 class="tittle-card">Venta de insumos a todo el país</h2>
-              <img
-                class="img-card"
-                src="assets/img/envios.jpg"
-                alt="img-envios"
-              />
-              <p class="text-card">
-                A través de nuestro sitio web, podrá acceder a nuestro catálogo
-                de los diferentes productos que comercializamos y así, poder
-                solicitar presupuestos para su hogar, oficina, deposito, etc.
-                Nos manejamos con envíos a través de OCA
-              </p>
-              <a class="wholesale-prices" href="pages/login.html"
-                >Ingresá para ver los precios mayoristas</a
-              >
-            </div>
+          <div>
+            <iframe
+              title="Noticias"
+              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftecnorick1&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+              width="330"
+              height="400"
+              scrolling="yes"
+              frameborder="0"
+              allowfullscreen="true"
+              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            >
+            </iframe>
           </div>
         </article>
       </section>
-      <section id="services">
-        <div>
-          <img
-            class="banner"
-            src="assets/img/servTecnico.webp"
-            alt="img-serv-tecnico"
-          />
-        </div>
+      <section id="products">
         <article>
-          <div>
-            <h2>Servicio Técnico</h2>
-            <p>
-              Nuestros clientes son esenciales para nosotros, por eso es que
-              brindamos un servicio de pre-venta con asesoramiento para que
-              puedan lograr un sistema de seguridad de alta calidad. Por otro
-              lado, también van a contar con un servicio técnico de post-venta
-              inmediato, brindandole nuestra mano de obra especializada para
-              cualquier problema que pueda surgir en la obra.
-            </p>
-            <p>
-              Realizamos mantenimientos y conexiones punto a punto, para una
-              mayor seguridad de la población en las calles del pueblo. Ahora
-              contamos con envíos de todos nuestros productos a todo el país,
-              por lo que también podrán contar con nuestro servicio técnico
-              aquellos clientes que elijan comprar a través de nuestra web (en
-              la pagina principal podran descargar el catálogo), asesorandolos
-              vía whatsapp o email sobre que producto elegir para su mayor
-              seguridad, tanto en un domicilio, como una oficina, depósito, etc.
-            </p>
+          <div class="cards">
+            <div class="card-product">
+              <div class="card-img">
+                <img src="assets/img/ofertas/oferta5.jpg" alt="oferta5" />
+              </div>
+              <div class="card-tittle">
+                <h3>Shampoo y Acondicionador Dove</h3>
+              </div>
+              <div class="card-bid">
+                <h5>$179.60</h5>
+
+                <button><i class="fas fa-cart-plus"></i></button>
+              </div>
+            </div>
+            <div class="card-product"></div>
+            <div class="card-product"></div>
           </div>
-          <div>
+          <!-- <div>
             <h2>Servicios técnicos e instalaciones en la zona</h2>
           </div>
           <div class="spool">
@@ -228,133 +184,8 @@
             <div class="spool-item"></div>
             <div class="spool-item"></div>
             <div class="spool-item"></div>
-          </div>
+          </div> -->
         </article>
-      </section>
-      <section id="contact">
-        <div>
-          <img
-            class="banner"
-            src="assets/img/contacto.jpg"
-            alt="img-contacto"
-          />
-        </div>
-        <article class="contact">
-          <div>
-            <form action="">
-              <div class="user">
-                <div class="label-form">
-                  <label for="name"><i class="fa-solid fa-user"></i></label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Nombre"
-                    required
-                  />
-                </div>
-                <div class="label-form">
-                  <label for="surname"></label>
-                  <input
-                    type="text"
-                    name="surname"
-                    id="surname"
-                    placeholder="Apellido"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="label-form">
-                <label for="company"
-                  ><i class="fa-regular fa-building"></i
-                ></label>
-                <input
-                  type="text"
-                  name="company"
-                  id="company"
-                  placeholder="Empresa"
-                  required
-                />
-              </div>
-              <div class="label-form">
-                <label for="address"
-                  ><i class="fa-solid fa-location-pin"></i
-                ></label>
-                <input
-                  type="text"
-                  name="address"
-                  id="address"
-                  placeholder="Dirección"
-                  required
-                />
-              </div>
-              <div class="label-form">
-                <label for="mail"><i class="fa-solid fa-at"></i></label>
-                <input
-                  type="email"
-                  name="mail"
-                  id="mail"
-                  placeholder="Email"
-                  required
-                />
-              </div>
-              <div class="label-form">
-                <label for="phone"
-                  ><i class="fa-solid fa-mobile-screen-button"></i
-                ></label>
-                <input
-                  type="number"
-                  name="phone"
-                  id="phone"
-                  placeholder="Teléfono"
-                  required
-                />
-              </div>
-              <div>
-                <textarea
-                  name="textarea"
-                  id="textarea"
-                  cols="70"
-                  rows="10"
-                  placeholder="Su mensaje"
-                ></textarea>
-              </div>
-
-              <div class="form-button">
-                <button type="submit">
-                  Enviar<i class="fa-sharp fa-solid fa-arrow-right"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-          <div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3351.9070175762936!2d-61.254448820749616!3d-32.84771350673837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd42209b42c6d7b92!2sTecno%20Rick!5e0!3m2!1ses!2sar!4v1666636115675!5m2!1ses!2sar"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </article>
-        <div class="address">
-          <p>
-            <i class="fa-sharp fa-solid fa-house-chimney-window"></i>Rivadavia
-            1168, Correa, Santa Fe, Argentina
-          </p>
-          <p>
-            <a href="https://wa.me/+5493471416804" target="_blank"
-              ><i class="fa-brands fa-square-whatsapp"></i>03471-15416804</a
-            >
-          </p>
-          <p>
-            <a href="https://wa.me/+5493471590880" target="_blank"
-              ><i class="fa-brands fa-square-whatsapp"></i>03471-15590880</a
-            >
-          </p>
-        </div>
       </section>
       <div class="btn-up">
         <a href="#home"><i class="fa-solid fa-circle-arrow-up"></i></a>
@@ -374,12 +205,7 @@
           ></a>
         </div>
         <div class="download">
-          <p>Descargue nuestro catalogo ilustrado aquí</p>
-          <a href="#" download="Catalogo TecnoRick.pdf"
-            ><button type="button">
-              <i class="fa-solid fa-cloud-arrow-down"></i>DESCARGAR
-            </button></a
-          >
+          <p>fff</p>
         </div>
       </div>
       <div class="copyright">
@@ -393,5 +219,9 @@
         </p>
       </div>
     </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/utilities.js"></script>
   </body>
 </html>
